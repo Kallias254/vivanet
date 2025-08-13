@@ -38,7 +38,7 @@ export default function Page() {
                 variant="secondary"
                 className="w-max bg-emerald-100 text-emerald-700 hover:bg-emerald-100"
               >
-                Vivanet Communications
+                Vivanet Communications Ltd.
               </Badge>
               <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                 Fast & Reliable Internet for Mombasa
