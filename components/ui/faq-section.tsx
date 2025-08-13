@@ -19,11 +19,7 @@ export function FaqSection() {
       answer:
         "Yes, you can upgrade or downgrade your package at any time. Please contact our customer support to find the best plan for your needs.",
     },
-    {
-      question: "Is installation free?",
-      answer:
-        "Yes, standard installation is free for most of our residential packages. Please check specific package details for confirmation.",
-    },
+    
     {
       question: "What is your uptime guarantee?",
       answer:

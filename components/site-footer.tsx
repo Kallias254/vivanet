@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Wifi, Mail, Phone, MapPin } from 'lucide-react'
 
 export function SiteFooter() {
@@ -7,10 +8,7 @@ export function SiteFooter() {
       <div className="container mx-auto grid gap-10 px-4 py-12 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
-              <Wifi className="h-5 w-5" />
-            </div>
-            <span className="text-base font-semibold tracking-tight">Vivanet</span>
+            <Image src="/vivanet-logo.jpg" alt="Vivanet Logo" width={240} height={64} className="h-16 w-auto" />
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Fast, reliable internet for homes and businesses across Mombasa. Locally supported. Built for speed.

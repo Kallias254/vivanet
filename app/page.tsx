@@ -268,23 +268,23 @@ export default function Page() {
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  name: "Home Lite",
+                  name: "Bronze",
                   speed: "17Mbps",
                   price: "KES 3,000/mo",
                   blurb: "Ideal for Browse & Email",
-                  features: ["HD streaming", "1–3 devices", "Free installation"],
+                  features: ["HD streaming", "1–3 devices"],
                   popular: false,
                 },
                 {
-                  name: "Family Streamer",
+                  name: "Silver",
                   speed: "30Mbps",
                   price: "KES 5,000/mo",
                   blurb: "Best for Streaming & Gaming",
-                  features: ["4K streaming", "3–6 devices", "Free installation"],
+                  features: ["4K streaming", "3–6 devices"],
                   popular: true,
                 },
                 {
-                  name: "Power User",
+                  name: "Gold",
                   speed: "50Mbps",
                   price: "KES 6,000/mo",
                   blurb: "For Heavy Users & Home Offices",
@@ -292,7 +292,7 @@ export default function Page() {
                   popular: false,
                 },
                 {
-                  name: "Business Pro",
+                  name: "Diamond",
                   speed: "100Mbps",
                   price: "KES 10,000/mo",
                   blurb: "SMEs & High Traffic Locations",
