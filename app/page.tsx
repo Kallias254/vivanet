@@ -384,7 +384,18 @@ export default function Page() {
               </p>
             </div>
             <div className="mx-auto mt-10 max-w-lg">
-              <form name="contact" method="POST" data-netlify="true" className="grid gap-6">
+              <form name="contact" onSubmit={async (event) => {
+                event.preventDefault();
+                const formData = new FormData(event.target as HTMLFormElement);
+                await fetch("/__forms.html", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                  body: new URLSearchParams(formData as any).toString(),
+                });
+                // You might want to add success/error handling here, e.g., show a message or redirect
+                alert("Message sent successfully!"); // Simple alert for now
+                (event.target as HTMLFormElement).reset(); // Clear the form
+              }} className="grid gap-6">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="grid gap-2">
                   <Label htmlFor="name">Name</Label>
