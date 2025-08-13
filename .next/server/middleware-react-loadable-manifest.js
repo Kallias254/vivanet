@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"components/dynamic-scroll-to-top.tsx -> @/components/ui/scroll-to-top-button\":{\"id\":\"components/dynamic-scroll-to-top.tsx -> @/components/ui/scroll-to-top-button\",\"files\":[\"static/chunks/_app-pages-browser_components_ui_scroll-to-top-button_tsx.js\"]}}"
