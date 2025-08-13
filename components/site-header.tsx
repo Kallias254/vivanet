@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Wifi } from 'lucide-react'
@@ -21,10 +22,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center px-4">
         <Link href="/" className="flex items-center gap-2" aria-label="Vivanet Home">
-          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-sm">
-            <Wifi className="h-5 w-5" />
-          </div>
-          <span className="text-base font-semibold tracking-tight">Vivanet Communications Kenya</span>
+          <Image src="/vivanet-logo.jpg" alt="Vivanet Logo" width={240} height={64} className="h-16 w-auto" />
         </Link>
 
         <nav className="hidden flex-grow items-center justify-center gap-6 md:flex" aria-label="Primary">
@@ -55,10 +53,7 @@ export function SiteHeader() {
             <SheetContent side="right" className="w-[320px]">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
-                    <Wifi className="h-4 w-4" />
-                  </div>
-                  Vivanet
+                  <Image src="/vivanet-logo.jpg" alt="Vivanet Logo" width={170} height={48} className="h-12 w-auto" />
                 </SheetTitle>
               </SheetHeader>
               <div className="mt-6 grid gap-3">
